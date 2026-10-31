@@ -1,0 +1,24 @@
+{
+  "symbols": ["BTCUSDT", "ETHUSDT", "SOLUSDT"],
+  "sources": ["binance", "bybit", "okx", "kraken", "coinbase"],
+  "alerts": [
+    {"symbol": "BTCUSDT", "above": 80000},
+    {"symbol": "BTCUSDT", "below": 70000},
+    {"symbol": "ETHUSDT", "change_abs_pct": 5},
+    {"symbol": "BTCUSDT", "dispersion_pct": 0.5}
+  ],
+  "alert_cooldown_min": 60,
+  "webhook_url": "",
+  "telegram": {
+    "enabled": true,
+    "token_env": "TELEGRAM_BOT_TOKEN",
+    "chat_env": "TELEGRAM_CHAT_ID"
+  },
+  "risk": {
+    "symbol": "BTCUSDT",
+    "allowed_symbols": ["BTCUSDT"],
+    "max_notional_usdt": 50,
+    "max_position_usdt": 100,
+    "alloc_usdt": 10
+  }
+}

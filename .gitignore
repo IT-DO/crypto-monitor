@@ -1,0 +1,12 @@
+# secrets
+.env
+
+# python
+__pycache__/
+*.pyc
+
+# runtime data
+data/
+
+# generated reports
+*.html
